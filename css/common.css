@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.card-icon{
+    width: 30px;
+    height: 22px;
+    background: url("img/card-icon.png") no-repeat center / contain;
+}
+
+.cs-icon{
+    width: 30px;
+    height: 22px;
+    background: url("img/credits-icon.png") no-repeat center / contain;
+}
+
+.dollar-icon{
+    width: 30px;
+    height: 22px;
+    background: url("img/dollar-icon.png") no-repeat center / contain;
+}
+
+.search-icon{
+    width: 28px;
+    height: 28px;
+    background: url("img/search-icon.png") no-repeat center / contain;
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<title>Webpage</title>
+		<link rel="icon" type="image/ico" href="img/favicon.ico">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="Awesome webpage">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link rel="stylesheet" href="styles.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		<script src="script.js" defer></script>
+	</head>
+	<body>
+		<noscript>
+			<p>Please enable Javascript</p>
+		</noscript>
+		<header class="header">
+			<div class="header__wrapper"><a href="#" class="header__logo">Credits PULT</a>
+				<div class="d-flex align-items-center">
+					<div class="card-icon mr-1"></div><span class="header__address">EHqCSXeGd8NrJbR8iwaNdqEKDHMCNsepfqidewhCDN</span>
+				</div>
+				<div class="header__currencies">
+					<div class="d-flex align-items-center mr-3">
+						<div class="cs-icon mr-1"></div><span class="header__cs-count mr-1">100</span><span>CS</span>
+					</div>
+					<div class="d-flex align-items-center">
+						<div class="dollar-icon"></div><span class="header__dollar-count mr-1">1000</span><span>$</span>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="text-center text-md-left p-4">
+			<div class="container d-flex align-items-center mt-3 mb-4 flex-wrap justify-content-center justify-content-md-start">
+				<form class="d-flex align-items-center mx-3 my-3 mr-md-5">
+					<div class="search-icon mr-1"></div>
+					<input type="search" placeholder="Search contract" class="input">
+				</form>
+				<button class="mx-3 my-3 mr-md-5">Создать</button>
+				<button class="mx-3 my-3 mr-md-5">Расписание</button><a href="#" class="link link_statistics">Статистика</a>
+			</div>
+			<div class="container">
+				<div class="row justify-content-around">
+					<div class="col-lg-3 border border-dark">
+						<ul class="contracts">
+							<li class="contracts__item">My Contracts
+								<ul class="contracts__list">
+									<li class="contracts__list-item contracts__list-item_active">Token Credits(CRT)</li>
+									<li class="contracts__list-item">Pre-SALE (CRT)</li>
+									<li class="contracts__list-item">ICO (CRT)</li>
+								</ul>
+							</li>
+							<li class="contracts__item">Other contracts
+								<ul class="contracts__list">
+									<li class="contracts__list-item">Contract 1</li>
+									<li class="contracts__list-item">Contract 2</li>
+									<li class="contracts__list-item">Contract 3</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-4 border border-dark">
+						<div class="container__title">Адрес контракта</div>
+						<div style="word-break:break-all;" class="container__text">EHqCSXeGd8NrJbR8iwaNdqEKDHMCNsepfqidewhCDN</div>
+						<div class="container__title">ABI</div>
+						<div style="word-break:break-word;" class="container__text border border-dark p-2">[{"constant":false,"inputs":[{"name":"_targetWallet","type":"address"},{"name":"_timeLockUpEnd","type":"uint256"}],"name":"walletLockBoth","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"name","outputs":[{"name":"","type":"string"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[</div>
+						<div class="container__title">Выбрать элемент</div>
+						<select class="input input_select">
+							<option>Function_1</option>
+							<option>Function_2</option>
+						</select>
+						<div class="container__title">_toaddress</div>
+						<input type="text" placeholder="uint256" class="input">
+						<div class="container__title">_value uint256</div>
+						<input type="text" placeholder="uint256" class="input">
+						<button class="button_execute border border-dark my-4">Выполнить</button>
+					</div>
+					<div class="col-lg-4 border border-dark">
+						<pre> 
+public class ArrayExamples
+ {	public static void main(String[] args)
+  	{	int[] list = {1, 2, 3, 4, 1, 2, 3};
+  		findAndPrintPairs(list, 5);
+  		bubblesort(list);
+  		showList(list);
+  
+  		list = new int[]{ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11};
+  		bubblesort(list);
+  		showList(list);
+  
+  		list = new int[]{11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0, -1, -2};
+  		bubblesort(list);
+  		showList(list);
+  
+  		list = new int[]{1};
+  		bubblesort(list);
+  		showList(list);
+  	}
+  
+  
+  	// pre: list != null, list.length > 0
+  	// post: return index of minimum element of array
+  	public static int findMin(int[] list)
+  	{	assert list != null && list.length > 0 : "failed precondition";
+  
+  		int indexOfMin = 0;
+  		for(int i = 1; i < list.length; i++)
+  		{	if(list[i] < list[indexOfMin])
+  			{	indexOfMin = i;
+  			}
+  		}
+  
+  		return indexOfMin;
+  	}</pre>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer"></footer>
+	</body>
+</html>

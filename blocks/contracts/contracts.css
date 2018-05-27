@@ -1,0 +1,50 @@
+.contracts{
+    list-style: none;
+}
+
+
+.contracts__item{
+    position: relative;
+    font-weight: bold;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+.contracts__item::before{
+    position: absolute;
+    content: "";
+    left: -30px;
+    top: 5px;
+    width: 35px;
+    height: 35px;
+    background: url("img/contracts1.png") no-repeat center / contain;
+}
+
+.contracts__list{
+    list-style: none;
+}
+
+.contracts__list-item{
+    padding: 5px;
+    position: relative;
+}
+
+.contracts__list-item:hover{
+    color: tomato;
+}
+
+.contracts__list-item_active{
+    background: #ffc581;
+    cursor: pointer;
+}
+
+.contracts__list-item::before{
+    position: absolute;
+    content: "";
+    left: -20px;
+    top: 7px;
+    width: 20px;
+    height: 20px;
+    background: url("img/contracts2.png") no-repeat center/contain;
+}

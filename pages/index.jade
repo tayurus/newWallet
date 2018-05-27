@@ -1,0 +1,95 @@
+doctype html
+html(lang="ru")
+    include ../blocks/head/head.jade
+    body
+        include ../blocks/header/header.jade
+            
+        main.text-center.text-md-left.p-4
+            .container.d-flex.align-items-center.mt-3.mb-4.flex-wrap.justify-content-center.justify-content-md-start
+                form.d-flex.align-items-center.mx-3.my-3.mr-md-5
+                    .search-icon.mr-1
+                    input.input(type="search", placeholder="Search contract")
+                button.mx-3.my-3.mr-md-5 Создать
+                button.mx-3.my-3.mr-md-5 Расписание
+                a.link.link_statistics(href="#") Статистика
+            
+            .container
+                .row.justify-content-around
+                    .col-lg-3.border.border-dark
+                        ul.contracts
+                            li.contracts__item My Contracts
+                                ul.contracts__list
+                                    li.contracts__list-item.contracts__list-item_active Token Credits(CRT)
+                                    li.contracts__list-item Pre-SALE (CRT)
+                                    li.contracts__list-item ICO (CRT)
+                                    
+                            li.contracts__item Other contracts
+                                ul.contracts__list
+                                    li.contracts__list-item Contract 1
+                                    li.contracts__list-item Contract 2
+                                    li.contracts__list-item Contract 3
+
+                            
+                    .col-lg-4.border.border-dark
+                        .container__title Адрес контракта
+                        .container__text(style="word-break:break-all;") EHqCSXeGd8NrJbR8iwaNdqEKDHMCNsepfqidewhCDN
+                        
+                        .container__title ABI
+                        .container__text.border.border-dark.p-2(style="word-break:break-word;") [{"constant":false,"inputs":[{"name":"_targetWallet","type":"address"},{"name":"_timeLockUpEnd","type":"uint256"}],"name":"walletLockBoth","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"name","outputs":[{"name":"","type":"string"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[
+                        
+                        .container__title Выбрать элемент
+                        select.input.input_select
+                            option Function_1
+                            option Function_2
+                        
+                        .container__title _toaddress
+                        input.input(type="text", placeholder="uint256")
+                        
+                        .container__title _value uint256
+                        input.input(type="text", placeholder="uint256")
+                        
+                        button.button_execute.border.border-dark.my-4 Выполнить
+                    
+                    .col-lg-4.border.border-dark
+                        pre 
+                            | public class ArrayExamples
+                            |  {	public static void main(String[] args)
+                            |   	{	int[] list = {1, 2, 3, 4, 1, 2, 3};
+                            |   		findAndPrintPairs(list, 5);
+                            |   		bubblesort(list);
+                            |   		showList(list);
+                            |   
+                            |   		list = new int[]{ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11};
+                            |   		bubblesort(list);
+                            |   		showList(list);
+                            |   
+                            |   		list = new int[]{11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0, -1, -2};
+                            |   		bubblesort(list);
+                            |   		showList(list);
+                            |   
+                            |   		list = new int[]{1};
+                            |   		bubblesort(list);
+                            |   		showList(list);
+                            |   	}
+                            |   
+                            |   
+                            |   	// pre: list != null, list.length > 0
+                            |   	// post: return index of minimum element of array
+                            |   	public static int findMin(int[] list)
+                            |   	{	assert list != null && list.length > 0 : "failed precondition";
+                            |   
+                            |   		int indexOfMin = 0;
+                            |   		for(int i = 1; i < list.length; i++)
+                            |   		{	if(list[i] < list[indexOfMin])
+                            |   			{	indexOfMin = i;
+                            |   			}
+                            |   		}
+                            |   
+                            |   		return indexOfMin;
+                            |   	}
+
+                
+                
+            
+        
+        include ../blocks/footer/footer.jade
