@@ -10,7 +10,6 @@
     cursor: pointer;
 }
 
-
 .contracts__item::before{
     position: absolute;
     content: "";
